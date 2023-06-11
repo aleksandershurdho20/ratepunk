@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Noto+Sans:wght@400;700&display=swap');
+//Utils -  folder gathers all Sass tools and helpers used across the project. Every global variable, function, mixin 
+@import './utils/';
+//Base holds boiler plate of project. 
+@import 'base/reset';
+//Layout-contains everything that takes part in laying out the site or application. 
+@import './layout/layout';
+//Components - For smaller components
+@import './components/';
+//Page -for page-specific styles,file named after the page
+
+@import './pages/';

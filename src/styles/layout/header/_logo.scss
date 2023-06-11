@@ -1,0 +1,10 @@
+.header__logo {
+  &--img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @include respond(mobile) {
+    margin-left: 1.6rem;
+  }
+}

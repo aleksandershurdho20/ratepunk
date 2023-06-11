@@ -1,0 +1,16 @@
+@import './header/';
+
+.app {
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: auto;
+  margin: 0 auto;
+  width: $width-full;
+  @include grid(100%, auto);
+  grid-template-areas: 'header';
+  position: relative;
+}
+
+.slice {
+  grid-area: slice;
+}

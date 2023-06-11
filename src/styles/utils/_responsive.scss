@@ -1,0 +1,34 @@
+// MEDIA QUERY MANAGER
+/* 
+600px and down for mobile devices
+600px - 768px: large-mobil / portrait tablets
+768px - 1024px:  tab / landscape tablets
+1024px -1200: laptop / medium desktop
+>1200px:  large desktop / large laptop
+
+
+
+keyword for breakpoint: 
+
+large-mobile,
+tablet
+desktop, 
+large-desktop
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == large-desktop {
+    @media only screen and (max-width: 1120px) {
+      @content;
+    }
+  }
+}

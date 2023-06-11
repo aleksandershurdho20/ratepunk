@@ -1,0 +1,19 @@
+@import './logo';
+@import './navbar';
+
+.header {
+  grid-area: header;
+  background-color: $bg-white;
+  height: 8rem;
+  border: 1px solid #1f343e;
+  @include respond(mobile) {
+    height: 5.6rem;
+  }
+
+  &__main {
+    margin: 0 auto;
+    max-width: $max-width;
+    height: 100%;
+    @include grid(50% 50%, auto);
+  }
+}
