@@ -5,6 +5,8 @@ import { useState } from 'react';
 import ReferralLink from "@/components/Home/ReferralLink";
 import GetReFerralLink from "@/components/Home/GetReFerralLink";
 import StepCount from "@/components/Home/StepCount";
+import Store from "@/components/Home/Store";
+import Footer from "@/shared/Footer/Footer";
 
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
     setReferralLink('https://ratepunk.com/referral');
   };
   return (
-    <>
+    <div className="app">
     <Header/>
     <div className='main'>
       <div className='container'>
@@ -39,7 +41,8 @@ export default function Home() {
         <StepCount/>
       </div>
     </div>
-
-  </>
+    <Store/>
+    <Footer/>
+  </div>
   )
 }
